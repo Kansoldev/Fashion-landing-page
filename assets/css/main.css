@@ -46,3 +46,23 @@
   }
 }
 /* END HERO AREA */
+
+/* HEADER AREA */
+.header-area {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  #nav-menu {
+    background-color: rgba(19, 19, 17, 0.94);
+    padding: 1.25rem;
+  }
+}
+
+#nav-menu .nav-link {
+  margin-right: 23px;
+  font-size: 1.1rem;
+}
+/* END HEADER AREA */
