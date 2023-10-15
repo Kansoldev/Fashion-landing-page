@@ -1,0 +1,48 @@
+/* VARIABLES */
+:root {
+  --primary: #ff8b20;
+}
+
+/* RESETS */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+/* END RESETS */
+
+/* HERO AREA */
+.hero-area {
+  background-image: url("../img/pose.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 80vh;
+}
+
+@media (min-width: 992px) {
+  .hero-area {
+    background-position: initial;
+  }
+}
+
+.hero-area::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+}
+/* END HERO AREA */
